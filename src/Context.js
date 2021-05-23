@@ -28,8 +28,8 @@ class TemplateProvider extends Component {
             .then(data => {
                 console.log(data);
                 this.setState({
-                    templates,
-                    sortedTemplates,
+                    //templates,
+                    //sortedTemplates,
                     loading: false,
                 })
             })
