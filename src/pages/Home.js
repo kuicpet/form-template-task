@@ -60,6 +60,68 @@ export default function Home() {
                     </p>
                 </div>
             </div>
+            <div className="header_container">
+                <div className="header">
+                    <div className="template_category">All Templates</div>
+                    <div className="template_count">2000 templates</div>
+                </div>
+            </div>
+            <div className="templates_container">
+                <div className="template">
+                    <div className="template_contents">
+                        <h2>Alumni Membership Form Template</h2>
+                        <p>Engage your alumni network better with this alumni registration form template. Embed this in your website ...</p>
+                    </div>
+                    <div className="template_link">
+                        <a href="https://formpl.us/templates">Use Template</a>
+                    </div>
+                </div>
+                <div className="template">
+                    <div className="template_contents">
+                        <h2>Alumni Membership Form Template</h2>
+                        <p>Engage your alumni network better with this alumni registration form template. Embed this in your website ...</p>
+                    </div>
+                    <div className="template_link">
+                        <a href="https://formpl.us/templates">Use Template</a>
+                    </div>
+                </div>
+                <div className="template">
+                    <div className="template_contents">
+                        <h2>Alumni Membership Form Template</h2>
+                        <p>Engage your alumni network better with this alumni registration form template. Embed this in your website ...</p>
+                    </div>
+                    <div className="template_link">
+                        <a href="https://formpl.us/templates">Use Template</a>
+                    </div>
+                </div>
+                <div className="template">
+                    <div className="template_contents">
+                        <h2>Alumni Membership Form Template</h2>
+                        <p>Engage your alumni network better with this alumni registration form template. Embed this in your website ...</p>
+                    </div>
+                    <div className="template_link">
+                        <a href="https://formpl.us/templates">Use Template</a>
+                    </div>
+                </div>
+                <div className="template">
+                    <div className="template_contents">
+                        <h2>Alumni Membership Form Template</h2>
+                        <p>Engage your alumni network better with this alumni registration form template. Embed this in your website ...</p>
+                    </div>
+                    <div className="template_link">
+                        <a href="https://formpl.us/templates">Use Template</a>
+                    </div>
+                </div>
+                <div className="template">
+                    <div className="template_contents">
+                        <h2>Alumni Membership Form Template</h2>
+                        <p>Engage your alumni network better with this alumni registration form template. Embed this in your website ...</p>
+                    </div>
+                    <div className="template_link">
+                        <a href="https://formpl.us/templates">Use Template</a>
+                    </div>
+                </div>
+            </div>
         </div>
     )
 }

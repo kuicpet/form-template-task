@@ -14,14 +14,15 @@
   --priGray: #e5e5e5;
   --secGray: #989898;
   --terGray: #8F8B8B;
-  --boxShadow: 0px 4px 30px rgba(0,0,0,0,08);
+  --linkGray: #f9f9f9;
+  --boxShadow: 0px 4px 30px rgba(0,0,0,0.08);
   --priBorder: 0.5px solid #bdbdbd;
   --secBorder: 0.5px solid #c4c4c4;
-  --sekectArrow: var(--terGray);
+  --selectArrow: var(--terGray);
 }
 
 body {
-  font-family: sans-serif;
+  font-family: 'DM Sans', sans-serif;
   line-height: 1.4;
   background-color: var(--priWhite);
 }
@@ -69,7 +70,7 @@ body {
 
 fieldset{
   width: 10rem;
-  padding: 0.5rem;
+  padding: 0.5rem 1rem;
   margin: 1rem;
   display: flex;
   align-items: center;
@@ -102,7 +103,7 @@ select {
   min-width: 15ch;
   max-width: 30ch;
   border-radius: 0.25em;
-  padding: 0.25em 0.5em;
+  padding: 0.5rem 1rem;
   cursor: pointer;
   line-height: 1.1;
   background: url("./assets/Vector\(1\).png")  no-repeat right 10px center
@@ -113,7 +114,8 @@ select {
   align-items: center;
   justify-content: center;
   width: 100%;
-  margin: 4rem 0.5rem;
+  margin-top: 4rem;
+  margin-bottom: 1rem;
 }
 
 .banner {
@@ -126,4 +128,74 @@ select {
   padding: 1.5rem;
   background: url("./assets/Group\(1\).png") no-repeat left 90px center;
   background-color: var(--priPink);
+}
+
+.header_container {
+  align-items: center;
+  justify-content: center;
+  width: 86%;
+  margin: 2rem;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  padding: 1rem 0;
+}
+
+.template_category {
+  font-size: 18px;
+  margin-left: auto;
+  width: 100%;
+}
+
+.template_count {
+  font-size: 14px;
+  color: var(--secGray);
+  margin-left: auto;
+}
+
+.templates_container {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 1rem;
+  width: 86%;
+}
+
+.template {
+  width: 100%;
+  border-radius: 2px;
+  box-shadow: var(--boxShadow);
+  height: auto;
+  padding: 1rem 1rem 0;
+}
+
+.template_contents {
+  background-color: var(--priWhite);
+}
+.template h2 {
+  font-size: 24px;
+  margin: 1rem 0;
+  
+}
+
+.template p {
+  margin: 1rem 0;
+  font-family: 'Inter', sans-serif;
+}
+
+.template_link {
+  background-color: var(--linkGray);
+  padding: 1rem 0;
+}
+
+.template_link a {
+  color: var(--priGreen);
+  text-decoration: none;
+  transition: all .03s ease;
+}
+
+.template_link a:hover {
+  font-weight: 500;
+  text-decoration: underline;
 }
