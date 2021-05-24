@@ -17,4 +17,92 @@
   --boxShadow: 0px 4px 30px rgba(0,0,0,0,08);
   --priBorder: 0.5px solid #bdbdbd;
   --secBorder: 0.5px solid #c4c4c4;
+  --sekectArrow: var(--terGray);
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.4;
+  background-color: var(--priWhite);
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem;
+}
+
+.filter_container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  height: 5rem;
+  width: 100%;
+}
+
+.search_container,
+.sort_container
+{
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.sort_container {
+  justify-content: center;
+}
+.sort_container form{
+  display: inline-flex;
+  margin-right: 1rem;
+}
+
+.search_bar {
+  margin-left: 5rem;
+  height: 45px;
+  width: 20rem;
+  padding: 1rem 0.5rem;
+  border: var(--priBorder);
+  border-radius: 2px;
+  background: url("./assets/Group\ 19253.png") no-repeat right 10px center;
+}
+
+fieldset{
+  width: 10rem;
+  padding: 0.5rem;
+  margin: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+legend {
+  font-size: 12px;
+  color: var(--terGray);
+}
+
+select {
+  width: 10rem;
+  appearance: none;
+  background-color: transparent;
+  border: none;
+  padding: 0 1em 0 0;
+  margin: 0;
+  width: 100%;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: inherit;
+  line-height: inherit;
+  outline: none;
+}
+
+.select {
+  color: var(--terBlack);
+  width: 100%;
+  min-width: 15ch;
+  max-width: 30ch;
+  border-radius: 0.25em;
+  padding: 0.25em 0.5em;
+  cursor: pointer;
+  line-height: 1.1;
+  background: url("./assets/Vector\(1\).png")  no-repeat right 10px center
 }
