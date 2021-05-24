@@ -9,8 +9,8 @@ class TemplateProvider extends Component {
         templates : [],
         sortedTemplates: [],
         loading: true,
-        category: "all",
-        description: ""
+        // category: "all",
+        // description: ""
     };
 
     //Get Templates 
@@ -27,8 +27,9 @@ class TemplateProvider extends Component {
             })
             .then(data => {
                 console.log(data);
+                let templates = data
                 this.setState({
-                    //templates,
+                    templates: templates,
                     //sortedTemplates,
                     loading: false,
                 })
@@ -55,5 +56,7 @@ class TemplateProvider extends Component {
     }
 }
 
+const TemplateConsumer = TemplateContext.Consumer;
 
-export { TemplateProvider, TemplateContext }
+
+export { TemplateProvider, TemplateContext, TemplateConsumer }

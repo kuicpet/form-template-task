@@ -1,4 +1,5 @@
 import React from 'react';
+import TemplateList from "../components/TemplateList";
 
 
 export default function Home() {
@@ -66,62 +67,7 @@ export default function Home() {
                     <div className="template_count">2000 templates</div>
                 </div>
             </div>
-            <div className="templates_container">
-                <div className="template">
-                    <div className="template_contents">
-                        <h2>Alumni Membership Form Template</h2>
-                        <p>Engage your alumni network better with this alumni registration form template. Embed this in your website ...</p>
-                    </div>
-                    <div className="template_link">
-                        <a href="https://formpl.us/templates">Use Template</a>
-                    </div>
-                </div>
-                <div className="template">
-                    <div className="template_contents">
-                        <h2>Alumni Membership Form Template</h2>
-                        <p>Engage your alumni network better with this alumni registration form template. Embed this in your website ...</p>
-                    </div>
-                    <div className="template_link">
-                        <a href="https://formpl.us/templates">Use Template</a>
-                    </div>
-                </div>
-                <div className="template">
-                    <div className="template_contents">
-                        <h2>Alumni Membership Form Template</h2>
-                        <p>Engage your alumni network better with this alumni registration form template. Embed this in your website ...</p>
-                    </div>
-                    <div className="template_link">
-                        <a href="https://formpl.us/templates">Use Template</a>
-                    </div>
-                </div>
-                <div className="template">
-                    <div className="template_contents">
-                        <h2>Alumni Membership Form Template</h2>
-                        <p>Engage your alumni network better with this alumni registration form template. Embed this in your website ...</p>
-                    </div>
-                    <div className="template_link">
-                        <a href="https://formpl.us/templates">Use Template</a>
-                    </div>
-                </div>
-                <div className="template">
-                    <div className="template_contents">
-                        <h2>Alumni Membership Form Template</h2>
-                        <p>Engage your alumni network better with this alumni registration form template. Embed this in your website ...</p>
-                    </div>
-                    <div className="template_link">
-                        <a href="https://formpl.us/templates">Use Template</a>
-                    </div>
-                </div>
-                <div className="template">
-                    <div className="template_contents">
-                        <h2>Alumni Membership Form Template</h2>
-                        <p>Engage your alumni network better with this alumni registration form template. Embed this in your website ...</p>
-                    </div>
-                    <div className="template_link">
-                        <a href="https://formpl.us/templates">Use Template</a>
-                    </div>
-                </div>
-            </div>
+            <TemplateList />
         </div>
     )
 }
