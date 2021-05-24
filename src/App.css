@@ -70,8 +70,8 @@ body {
 
 fieldset{
   width: 10rem;
-  padding: 0.5rem 0.7rem;
-  margin: 1rem;
+  padding: 0 0.7rem;
+  margin: 0.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -166,7 +166,7 @@ select {
   border-radius: 2px;
   box-shadow: var(--boxShadow);
   height: auto;
-  padding: 1rem 1rem 0;
+  padding: 1rem 1rem;
   cursor: pointer;
   transition: all 0.5s ease;
 }
@@ -192,7 +192,8 @@ box-shadow: var(--boxShadow);
 
 .template_link {
   background-color: var(--linkGray);
-  padding: 1rem 0;
+  padding: 1rem;
+  margin: 0;
 }
 
 .template_link a {
@@ -206,11 +207,35 @@ box-shadow: var(--boxShadow);
   text-decoration: underline;
 }
 
+@media only screen and (max-width: 1024px){
+  .banner {
+    background-image: none;
+  }
+
+  .filter_container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .search_bar {
+    display: flex;
+    align-items: center;
+    
+  }
+
+  .sort_container form {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    width: 70%;
+  }
+}
+
 @media  only screen and (max-width: 768px){
   .templates_container {
     grid-template-columns: repeat(2,1fr);
   }
-  
+
   .banner {
     width: 100%;
     text-align: justify;
@@ -250,7 +275,7 @@ box-shadow: var(--boxShadow);
   }
 }
 
-@media only screen and (max-width: 360px){
+@media only screen and (max-width: 400px){
   .templates_container {
     grid-template-columns: repeat(1,1fr);
   }
