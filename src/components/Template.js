@@ -8,7 +8,7 @@ export class Template extends Component {
             <div>
                 <TemplateConsumer>
                     { value => (
-                        <div className="template">
+                    <div className="template">
                         <div className="template_contents">
                             <h2>{name}</h2>
                             <p>{description}</p>

@@ -1,6 +1,5 @@
 import React from 'react';
-import TemplateList from "../components/TemplateList";
-
+import TemplateContainer from "../components/TemplateConsumer";
 
 export default function Home() {
     return (
@@ -67,7 +66,7 @@ export default function Home() {
                     <div className="template_count">2000 templates</div>
                 </div>
             </div>
-            <TemplateList />
+            <TemplateContainer />
         </div>
     )
 }

@@ -58,5 +58,12 @@ class TemplateProvider extends Component {
 
 const TemplateConsumer = TemplateContext.Consumer;
 
+export function withTemplateConsumer(Component){
+    return function ConsumerWrapper(props) {
+        return <TemplateConsumer>
+            {value => <Component {...props} context={value} />}
+        </TemplateConsumer>
+    }
+}
 
 export { TemplateProvider, TemplateContext, TemplateConsumer }
