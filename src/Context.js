@@ -9,6 +9,7 @@ class TemplateProvider extends Component {
         templates : [],
         sortedTemplates: [],
         loading: true,
+        templateCount: "",
         // category: "all",
         // description: ""
     };
@@ -27,9 +28,12 @@ class TemplateProvider extends Component {
             })
             .then(data => {
                 console.log(data);
-                let templates = data
+                let templates = data;
+                let templateCount = data.length;
+                // console.log(templateCount)
                 this.setState({
                     templates: templates,
+                    templateCount: templateCount,
                     //sortedTemplates,
                     loading: false,
                 })
