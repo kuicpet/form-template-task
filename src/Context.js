@@ -10,7 +10,8 @@ class TemplateProvider extends Component {
         sortedTemplates: [],
         loading: true,
         templateCount: "",
-        // category: "all",
+        category: ["Education","E-Commerce","Health"],
+        errorMsg: "",
         // description: ""
     };
 
@@ -30,7 +31,7 @@ class TemplateProvider extends Component {
                 console.log(data);
                 let templates = data;
                 let templateCount = data.length;
-                // console.log(templateCount)
+                
                 this.setState({
                     templates: templates,
                     templateCount: templateCount,
@@ -40,12 +41,19 @@ class TemplateProvider extends Component {
             })
         } catch (error) {
             console.log(error)
+            this.setState({
+                errorMsg: error
+            })
         }
     }
 
     componentDidMount(){
         this.getTemplates()
     }
+
+// Filter Templates
+
+    
 
     render(){
         return (

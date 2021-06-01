@@ -219,6 +219,10 @@ box-shadow: var(--boxShadow);
   text-decoration: underline;
 }
 
+small{
+  font-size: 10px;
+}
+
 @media only screen and (max-width: 1024px){
   .banner {
     background-image: none;

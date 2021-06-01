@@ -3,8 +3,9 @@ import { TemplateConsumer } from "../Context";
 
 export class Template extends Component {
     render() {
-        const { description, link, name } = this.props.template;
-        return (
+        const { description, link, name, created } = this.props.template;
+        const date = created.toSringDate();
+                return (
             <div>
                 <TemplateConsumer>
                     { value => (
@@ -15,6 +16,9 @@ export class Template extends Component {
                         </div>
                         <div className="template_link">
                             <a href={link}>Use Template</a>
+                            <div>
+                                <small>Created: {date}</small>
+                            </div>
                         </div>
                     </div>
                     ) }
