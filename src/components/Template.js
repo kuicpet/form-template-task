@@ -12,7 +12,7 @@ export class Template extends Component {
                         <div className="template_contents">
                             {category.map((elem, index) => 
                                 <ul key={index}>
-                                    <li className="tags">{elem},</li>
+                                    <li className="tags">{elem} ,</li>
                                 </ul>
                             )}
                             <h2>{name}</h2>
