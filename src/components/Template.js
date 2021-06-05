@@ -3,13 +3,18 @@ import { TemplateConsumer } from "../Context";
 
 export class Template extends Component {
     render() {
-        const { description, link, name, created } = this.props.template;
+        const { description, link, name, created, category } = this.props.template;
                 return (
             <div>
                 <TemplateConsumer>
                     { value => (
                     <div className="template">
                         <div className="template_contents">
+                            {category.map((elem, index) => 
+                                <ul key={index}>
+                                    <li className="tags">{elem},</li>
+                                </ul>
+                            )}
                             <h2>{name}</h2>
                             <p>{description}</p>
                         </div>
